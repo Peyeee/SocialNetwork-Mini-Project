@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span,
+p,
+a {
+    color: #F8F8FF;
+}
+
+.sectionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.Login-Section {
+    width: 30%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    background: rgba(12, 12, 12, 0.81);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 15px rgba(255, 254, 254, 0.502);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(12, 12, 12, 1);
+    gap: 12rem;
+    margin-top: 4.5rem;
+}
+
+input {
+    border: 0px solid #D4D3E8;
+    background: rgba(12, 12, 12, 0.81);
+    background-color: white;
+}
+
+input:focus,
+input:active,
+input:hover {
+    outline: none;
+}
+
+.Login-Section-Div-Padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-Section-Div-Hijo-Input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50%;
+}
+
+.login-Section-Div-Hijo-Input>icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: blue;
+    font-size: 3em;
+}
+
+.Div-top-SingIn {
+    height: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Div-top-SingIn>span {
+    font-weight: 700;
+    font-family: Degular-Bold;
+    font-size: 3.5rem;
+    line-height: 53.08px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.Div-top-SingIn>p {
+    font-family: Degular Display Demo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.19px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.Div-Mid-Data>input {
+    appearance: none;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid #ffffff;
+    background: rgba(#E91E63);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: .4em;
+    color: #E91E63;
+    background-color: none;
+}
+
+.Div-Mid-Data>input:focus {
+    transition: 0.5s;
+    border-bottom: .2em solid #E0115F;
+}
+
+.Div-Mid-Data {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.iconPerson {
+    color: #E0115F;
+    position: absolute;
+    top: 44px;
+    left: 20px;
+    font-size: 1.1rem;
+}
+
+.iconEye {
+    color: #E0115F;
+    position: absolute;
+    top: 95px;
+    right: 20px;
+    font-size: 1.1rem;
+}
+
+.Div-Bottom {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+
+.Div-Bottom>a {
+    width: 80%;
+    background-color: #E0115F;
+    height: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Div-Bottom>a:hover {
+    background-color: #DC143C;
+    transition: 0.3s;
+}
+
+.Div-Bottom>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Div-Bottom>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 120%;
+    border-radius: 3rem;
+    width: 10rem;
+}
+
+.Div-Bottom>div>div>span {
+    color: #E0115F;
+    width: 75%;
+}
+
+.Div-Bottom>div>div>span:hover {
+    color: #1C1C1C;
+    transition: 0.1s;
+    width: 75%;
+}
+
+.desaparecer {
+    display: none;
+}
