@@ -25,7 +25,7 @@ function Main() {
                         <input type="text" placeholder='PassWord' />
                     </div>
                     <div className='Div-Bottom'>
-                        <a href="/">Sign in</a>
+                        <a href="/" id='Boton'>Sign in</a>
                         <span> -Or Sign In with- </span>
                         <div>
                             <div>
