@@ -64,18 +64,28 @@ li:hover {
     height: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    transition: 0.4s;
+
+
 }
 
 .Li_SignUp {
-    transition: 0.3s;
     width: 20%;
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.4s;
+
 }
 .Li_World{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.Li_World > a > svg{
     display: flex;
     justify-content: center;
     align-items: center;

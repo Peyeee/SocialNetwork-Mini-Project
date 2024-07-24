@@ -18,6 +18,14 @@ a {
     gap: 5rem;
 }
 
+.login-body {
+    background-image: url(../src/assets/bryan-goff-f7YQo-eYHdM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Para que ocupe toda la altura de la pantalla */
+}
+
 .Login-Section {
     width: 30%;
     background-color: #121212;
@@ -155,22 +163,6 @@ input:hover {
     height: 35%;
 }
 
-.Div-Bottom>a {
-    width: 80%;
-    background-color: #E0115F;
-    height: 2.5rem;
-    border-radius: 3rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.Div-Bottom>a:hover {
-    background-color: #DC143C;
-    transition: 0.3s;
-}
 
 .Div-Bottom>div {
     display: flex;
@@ -203,4 +195,22 @@ input:hover {
 
 .desaparecer {
     display: none;
+}
+
+.buttonSign {
+    width: 80%;
+    background-color: #E0115F;
+    height: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+}
+
+.buttonSign:hover {
+    background-color: #DC143C;
+    transition: 0.3s;
 }
