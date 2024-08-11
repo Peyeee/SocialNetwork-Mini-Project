@@ -103,7 +103,9 @@
 .ButtonImg {
     color: var(--negrito) !important;
 }
-
+.login-body{
+    height: 100vh;
+}
 /*!----------------------  */
 .Prueba {
     display: flex;
@@ -113,6 +115,7 @@
     height: 100%;
     gap: 4rem;
     position: relative;
+    width: 100%;
 }
 
 .ButtonImg {

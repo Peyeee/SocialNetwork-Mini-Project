@@ -6,7 +6,6 @@ import { FaGoogle, FaMicrosoft, FaFacebook } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState } from 'react';
 import NavBar from '../NavBar/NavBar';
-
 function Main({ setUsername }) {
     const navigate = useNavigate();
     const [inputValue, setInputValue] = useState('');
@@ -14,26 +13,21 @@ function Main({ setUsername }) {
     const [error, setError] = useState('');
     const inputPassword = useRef(null);
     const [passwordVisible, setPasswordVisible] = useState(false);
-
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
-
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);
     };
-
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
         if (inputPassword.current) {
             inputPassword.current.type = passwordVisible ? 'text' : 'password';
         }
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[_!]).{1,}$/;
-
         if (password === '') {
             setError("Por favor, ingrese una contraseña");
         } else if (!regex.test(password)) {
@@ -43,7 +37,6 @@ function Main({ setUsername }) {
             navigate('/home'); // Navegar a la página de inicio
         }
     };
-
     return (
         <>
             <NavBar texto="Create Account" otroTexto="Register" />

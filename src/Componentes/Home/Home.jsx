@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
 import { Link } from "react-router-dom";
-
 function Home({ tweets, setTweets }) {
     const [tweetText, setTweetText] = useState('');
     const tweetContainerRef = useRef(null);
@@ -40,6 +39,13 @@ function Home({ tweets, setTweets }) {
             setTweetText('');
         }
     };
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault(); // Evita el salto de línea en el textarea
+            handleTweet(); // Llama a la función que maneja el tweet
+        }
+    };
+
     return (
         <>
             <NavBar texto="Home" otroTexto={<Link to='/mi-cuenta'>My account</Link>} />
@@ -51,6 +57,7 @@ function Home({ tweets, setTweets }) {
                             id="textArea"
                             value={tweetText}
                             onChange={(e) => setTweetText(e.target.value)}
+                            onKeyDown={handleKeyDown}
                         ></textarea>
                     </div>
                     <div className="div-card-home">
@@ -64,9 +71,8 @@ function Home({ tweets, setTweets }) {
                         <div className="home-body-tweets" key={index}>
                             <p>{tweet.text}</p>
                             <p className="date">{tweet.date}</p>
-                            <p className="username">{tweet.tweeterName}</p> {/* Mostrar el nombre de usuario */}
-                            <p className="username">{tweet.tweeterName}</p> {/* Mostrar el nombre de usuario */}
-                            <img src={tweet.imagen} alt="Foto de perfil" />
+                            <p className="usernameHome">{tweet.tweeterName}</p> {/* Mostrar el nombre de usuario */}
+                            <img src={tweet.imagen} alt="Foto de perfil" className='pfpHome' />
                         </div>
                     ))}
                 </div>
