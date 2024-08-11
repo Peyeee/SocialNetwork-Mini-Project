@@ -4,22 +4,13 @@
 
 }
 
-span,
-p,
-a,
-li {
+.textNavBar {
     color: #F8F8FF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 0.05em;
-    text-align: center;
-text-decoration: none;
+    font-family: 'Degular';
 }
 
-header {
-    background: rgba(12, 12, 12, 0.81);
-    border-radius: 16px;
+.headerHeader {
+    background: rgba(12, 12, 12, 0.81) !important;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -29,12 +20,22 @@ header {
     top: 0;
     position: sticky;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    background: rgba(12, 12, 12, 0.81) !important;
+
 }
 
 .div-Padre {
-    width: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%
 }
 
 .div-Padre>nav>ul {
@@ -48,15 +49,6 @@ header {
 
 
 
-li:hover {
-    border: red solid 0.1rem;
-    box-shadow: 4px 3px 18px 1px rgba(233,30,99,1);
-    -webkit-box-shadow: 4px 3px 18px 1px rgba(233,30,99,1);
-    -moz-box-shadow: 4px 3px 18px 1px rgba(233,30,99,1);        
-    border-radius: 0.5rem;
-    transition: 0.3s;
-    transform: scale(1.1);
-}
 
 .Li_Create {
     transition: 0.3s;
@@ -64,10 +56,18 @@ li:hover {
     height: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     transition: 0.4s;
 
 
+}
+
+.li {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 .Li_SignUp {
@@ -79,14 +79,88 @@ li:hover {
     transition: 0.4s;
 
 }
-.Li_World{
+
+.Li_World {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
 }
-.Li_World > a > svg{
+
+.Li_World>a>svg {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+/*! Nuevo CSS */
+.navHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navHeader .div-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.li:hover {
+    border: red solid 0.1rem;
+    box-shadow: 4px 3px 18px 1px rgba(233, 30, 99, 1);
+    -webkit-box-shadow: 4px 3px 18px 1px rgba(233, 30, 99, 1);
+    -moz-box-shadow: 4px 3px 18px 1px rgba(233, 30, 99, 1);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.navHeader .other {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.navHeader .other .CreateAccount {
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    transition: 0.4s;
+
+}
+
+.navHeader .other .SingUp {
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    transition: 0.4s;
+}
+
+.navHeader .other .TbWorld {
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    transition: 0.4s;
+}
+
+.navHeader .other .TbWorld {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.navHeader .other .TbWorld>svg {
+    display: flex;
+    align-items: center;
+}
+
+.navHeader .other .TbWorld>svg>path {
+    display: flex;
     align-items: center;
 }

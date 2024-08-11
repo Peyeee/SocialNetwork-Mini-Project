@@ -22,13 +22,13 @@ a {
     background-image: url(../src/assets/bryan-goff-f7YQo-eYHdM-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 55.3rem;
     /* Para que ocupe toda la altura de la pantalla */
 }
 
 .Login-Section {
     width: 30%;
-    background-color: #121212;
+    background-color: #1C1C1C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,7 @@ input {
     border: 0px solid #D4D3E8;
     background: rgba(12, 12, 12, 0.81);
     background-color: white;
+    transition: 1s;
 }
 
 input:focus,
@@ -114,16 +115,16 @@ input:hover {
     border: none;
     outline: none;
     border-bottom: .2em solid #ffffff;
-    background: rgba(#E91E63);
+    background: rgba(var(--frutillita));
     border-radius: 0.5rem 0.5rem 0 0;
     padding: .4em;
-    color: #E91E63;
+    color: var(--frutillita);
     background-color: none;
 }
 
 .Div-Mid-Data>input:focus {
     transition: 0.5s;
-    border-bottom: .2em solid #E0115F;
+    border-bottom: .2em solid var(--frutillita);
 }
 
 .Div-Mid-Data {
@@ -137,8 +138,9 @@ input:hover {
     gap: 1rem;
 }
 
+
 .iconPerson {
-    color: #E0115F;
+    color: var(--frutillita);
     position: absolute;
     top: 44px;
     left: 20px;
@@ -146,11 +148,12 @@ input:hover {
 }
 
 .iconEye {
-    color: #E0115F;
+    color: var(--frutillita);
     position: absolute;
     top: 95px;
     right: 20px;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .Div-Bottom {
@@ -172,7 +175,7 @@ input:hover {
     gap: 1rem;
 }
 
-.Div-Bottom>div>div {
+.Div-Bottom>div>.cardsSocialMedias {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,17 +183,29 @@ input:hover {
     height: 120%;
     border-radius: 3rem;
     width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.cardsSocialMedias {
+    cursor: pointer;
+}
+
+.Div-Bottom>div>.cardsSocialMedias>span {
+    width: 4rem;
+    transition: 0.3s;
 }
 
 .Div-Bottom>div>div>span {
-    color: #E0115F;
+    color: var(--frutillita);
     width: 75%;
 }
 
 .Div-Bottom>div>div>span:hover {
     color: #1C1C1C;
-    transition: 0.1s;
-    width: 75%;
+    transition: 0.3s;
 }
 
 .desaparecer {
@@ -199,7 +214,7 @@ input:hover {
 
 .buttonSign {
     width: 80%;
-    background-color: #E0115F;
+    background-color: var(--frutillita);
     height: 2.5rem;
     border-radius: 3rem;
     color: white;
@@ -213,4 +228,13 @@ input:hover {
 .buttonSign:hover {
     background-color: #DC143C;
     transition: 0.3s;
+}
+
+.sectionContainer {
+    width: 100 ! important;
+}
+
+
+.iconsSocialMedia>path {
+    color: black;
 }

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @font-face {
     font-family: 'Degular';
     src: url(../src/assets/Fonts/Degular-Regular.otf);
 }
+
 @font-face {
     font-family: 'Degular-Bold';
     src: url(../src/assets/Fonts/Degular-Semibold.otf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,3 +18,7 @@
     font-family: "Degular", sans-serif;
 }
 
+:root {
+    --frutillita: #E0115F;
+    --negrito: #1C1C1C;
+}

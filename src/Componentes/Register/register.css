@@ -1,0 +1,23 @@
+.Login-SectionRegiser {
+    margin-top: 5rem;
+    height: 150%;
+    gap: 50rem !important;
+}
+
+.Login-SectionRegiser {
+    margin-top: 5rem;
+    height: 150%;
+    gap: 50rem !important;
+}
+
+.Login-Section-Div-PadreRegister {
+    gap: 1rem;
+}
+
+.IconPersonRegister {
+    top: 0.5rem;
+}
+
+.IconPersonRegister>svg>path {
+    color: yellowgreen !important;
+}
