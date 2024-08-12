@@ -109,7 +109,8 @@ input:hover {
     text-align: center;
 }
 
-.Div-Mid-Data>input {
+#inputEmail,
+#inputPassword {
     appearance: none;
     width: 80%;
     border: none;
@@ -237,4 +238,171 @@ input:hover {
 
 .iconsSocialMedia>path {
     color: black;
+}
+
+/*! Media Querys   */
+
+/* Media Query para pantallas menores a 1400px */
+/* Media Query para pantallas menores a 1400px */
+@media (max-width: 1400px) {
+    .sectionContainer {
+        width: 95% !important;
+        /* Ajusta el ancho del contenedor */
+    }
+
+    .img {
+        display: none;
+    }
+
+    .Login-Section {
+        width: 80%;
+        /* Ajusta el ancho del formulario de login */
+        height: 35rem;
+        /* Ajusta la altura del formulario de login */
+    }
+
+    .sectionContainer,
+    #login {
+        width: 100% !important;
+    }
+
+    .Div-top-SingIn>span {
+        font-size: 2.5rem;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .Div-top-SingIn>p {
+        font-size: 18px;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .inputEmail,
+    .inputPassword {
+        width: 100%;
+        /* Ajusta el ancho de los inputs para que ocupen el 100% del contenedor */
+    }
+
+    .Div-Mid-Data {
+        width: 90%;
+        /* Ajusta el ancho del contenedor de datos del medio */
+        height: auto;
+        /* Ajusta la altura según el contenido */
+    }
+
+    .Div-Bottom {
+        height: auto;
+        /* Ajusta la altura según el contenido */
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna para pantallas pequeñas */
+    }
+
+    .Div-Bottom>div {
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna para pantallas pequeñas */
+    }
+}
+
+/* Media Query para pantallas menores a 1024px (Tabletas) */
+@media (max-width: 1024px) {
+    .sectionContainer {
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna para pantallas más pequeñas */
+    }
+
+    .Login-Section {
+        width: 90%;
+        /* Ajusta el ancho del formulario de login */
+        height: auto;
+        /* Ajusta la altura según el contenido */
+    }
+
+    .inputEmail,
+    .inputPassword {
+        width: 100%;
+        /* Ajusta el ancho de los inputs */
+    }
+
+    .Div-top-SingIn>span {
+        font-size: 2rem;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .Div-top-SingIn>p {
+        font-size: 16px;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .Div-Mid-Data {
+        width: 100%;
+        /* Ajusta el ancho del contenedor de datos del medio */
+    }
+
+    .div-input-search {
+        display: none !important;
+    }
+
+
+    .logoHome {
+        display: none;
+    }
+
+    .Div-Bottom {
+        width: 100%;
+        /* Ajusta el ancho del contenedor de la parte inferior */
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+    }
+
+    .cardsSocialMedias {
+        width: 8rem;
+        /* Ajusta el ancho de las tarjetas sociales */
+    }
+}
+
+/* Media Query para pantallas menores a 768px (Móviles) */
+@media (max-width: 768px) {
+    .sectionContainer {
+        padding: 1rem;
+        /* Añade padding para evitar que el contenido toque los bordes */
+    }
+
+    .Login-Section {
+        width: 100%;
+        /* Ajusta el ancho del formulario de login */
+        height: auto;
+        /* Ajusta la altura según el contenido */
+    }
+
+    .Div-top-SingIn>span {
+        font-size: 1.5rem;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .Div-top-SingIn>p {
+        font-size: 14px;
+        /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .inputEmail,
+    .inputPassword {
+        width: 100%;
+        /* Ajusta el ancho de los inputs */
+    }
+
+    .Div-Mid-Data {
+        width: 100%;
+        /* Ajusta el ancho del contenedor de datos del medio */
+    }
+
+    .Div-Bottom {
+        width: 100%;
+        /* Ajusta el ancho del contenedor de la parte inferior */
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+    }
+
+    .cardsSocialMedias {
+        width: 6rem;
+        /* Ajusta el ancho de las tarjetas sociales */
+    }
 }

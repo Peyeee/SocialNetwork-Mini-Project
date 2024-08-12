@@ -56,30 +56,6 @@
     ;
 }
 
-.btn-edit-description {
-    background-color: #4CAF50;
-    /* Verde */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 10px;
-}
-
-.btn-edit-description:hover {
-    background-color: #45a049;
-    /* Verde más oscuro */
-}
-
-.btn-edit-description:active {
-    background-color: #388e3c;
-    /* Verde aún más oscuro */
-    transform: scale(0.98);
-}
-
 .Body-Container_Account .Body-Container_Account-edit .Body-Container_Account-Followers {
     position: relative;
     right: 1rem;
@@ -124,10 +100,6 @@
     font-size: 3rem;
     font-weight: 600;
     color: #F8F8FF;
-}
-
-.textAreaDescription {
-    color: black;
 }
 
 .ButtonImg {
@@ -246,29 +218,4 @@
 .Body-Container_Account {
     width: 100% !important;
     height: 100vh !important;
-}
-
-@media (max-width: 992px) {
-    .Body-Container_Account-Followers {
-        gap: 1rem !important;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 1.5rem;
-    }
-
-}
-
-@media (max-height: 1000px) {
-    .imagenPpt {
-        top: -12.5rem;
-    }
-
-    /* .Prueba{
-        top: 15rem;
-    } */
-    .Body-Container_Account-edit {
-        position: relative;
-        top: 1rem
-    }
 }

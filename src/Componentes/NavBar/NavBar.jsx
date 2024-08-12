@@ -4,6 +4,8 @@ import Logo from '../../assets/Img/NetSpark_Logo.png'
 import { Link } from 'react-router-dom';
 import Home from '../Home/Home';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap'
+import { IoSearch } from "react-icons/io5";
+
 
 function NavBar(props) {
     return (
@@ -11,7 +13,7 @@ function NavBar(props) {
             <nav className='navHeader'>
                 <div className='div-logo'>
                     <Link to={'/home'}>
-                        <img src={Logo} alt="" width="300px" />
+                        <img src={Logo} alt="" width="300px" className='logoHome' />
                     </Link>
                 </div>
                 <div className='other'>
@@ -20,6 +22,10 @@ function NavBar(props) {
                     <ul className='li TbWorld textNavBar'>
                         <TbWorld></TbWorld>
                     </ul>
+                </div>
+                <div className='div-input-search'>
+                    <input type="text" className='inputSearch'/>
+                    <IoSearch className='searchIcon'/>
                 </div>
             </nav>
         </header >

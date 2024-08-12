@@ -39,7 +39,7 @@ function Main({ setUsername }) {
     };
     return (
         <>
-            <NavBar texto="Create Account" otroTexto="Register" />
+            <NavBar texto="Create Account" className="navBarDisapear" otroTexto="Register" />
             <div className="login-body">
                 <div className='sectionContainer' id='login'>
                     <section className='Login-Section'>
@@ -64,6 +64,7 @@ function Main({ setUsername }) {
                                     value={password}
                                     onChange={handlePasswordChange}
                                     ref={inputPassword}
+                                    id='inputPassword'
                                 />
                                 {error && <p style={{ color: 'red' }} className='error'>{error}</p>}
                             </div>
