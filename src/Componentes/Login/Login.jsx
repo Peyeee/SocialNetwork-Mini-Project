@@ -6,7 +6,9 @@ import { FaGoogle, FaMicrosoft, FaFacebook } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useRef, useState } from 'react';
 import NavBar from '../NavBar/NavBar';
+import { motion } from 'framer-motion';
 function Main({ setUsername }) {
+
     const navigate = useNavigate();
     const [inputValue, setInputValue] = useState('');
     const [password, setPassword] = useState('');
@@ -38,63 +40,70 @@ function Main({ setUsername }) {
         }
     };
     return (
-        <>
-            <NavBar texto="Create Account" className="navBarDisapear" otroTexto="Register" />
-            <div className="login-body">
-                <div className='sectionContainer' id='login'>
-                    <section className='Login-Section'>
-                        <div className='Login-Section-Div-Padre'>
-                            <div className='Div-top-SingIn'>
-                                <span>Sign In</span>
-                                <p>Hey, Enter your details to login to your account</p>
-                            </div>
-                            <div className='Div-Mid-Data'>
-                                <FaUser className='iconPerson' id='iconPerson' />
-                                <input
-                                    type="text"
-                                    placeholder='UserName'
-                                    id='inputEmail'
-                                    value={inputValue}
-                                    onChange={handleInputChange}
-                                />
-                                <BiShowAlt className='iconEye' id='iconEye' onClick={togglePasswordVisibility} />
-                                <input
-                                    type="password"
-                                    placeholder='Password'
-                                    value={password}
-                                    onChange={handlePasswordChange}
-                                    ref={inputPassword}
-                                    id='inputPassword'
-                                />
-                                {error && <p style={{ color: 'red' }} className='error'>{error}</p>}
-                            </div>
-                            <div className='Div-Bottom'>
-                                <button id='Boton' onClick={handleSubmit} className='buttonSign'>Sign in</button>
-                                <span> -Or Sign In with- </span>
-                                <div>
-                                    <div className='cardsSocialMedias'>
-                                        <FaGoogle className='iconsSocialMedia' />
-                                        <span>Google</span>
-                                    </div>
-                                    <div className='cardsSocialMedias'>
-                                        <FaMicrosoft className='iconsSocialMedia' />
-                                        <span>Microsoft</span>
-                                    </div>
-                                    <div className='cardsSocialMedias'>
-                                        <FaFacebook className='iconsSocialMedia' />
-                                        <span>Facebook</span>
-                                    </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.9 }}
+        >
+            <>
+                <NavBar texto="Create Account" className="navBarDisapear" otroTexto={<Link to={'/register'}>Register</Link>} />
+                <div className="login-body">
+                    <div className='sectionContainer' id='login'>
+                        <section className='Login-Section'>
+                            <div className='Login-Section-Div-Padre'>
+                                <div className='Div-top-SingIn'>
+                                    <span>Sign In</span>
+                                    <p>Hey, Enter your details to login to your account</p>
                                 </div>
-                                <span>Don't have an account?</span><Link to={'/register'}>Register Now?</Link>
+                                <div className='Div-Mid-Data'>
+                                    <FaUser className='iconPerson' id='iconPerson' />
+                                    <input
+                                        type="text"
+                                        placeholder='UserName'
+                                        id='inputEmail'
+                                        value={inputValue}
+                                        onChange={handleInputChange}
+                                    />
+                                    <BiShowAlt className='iconEye' id='iconEye' onClick={togglePasswordVisibility} />
+                                    <input
+                                        type="password"
+                                        placeholder='Password'
+                                        value={password}
+                                        onChange={handlePasswordChange}
+                                        ref={inputPassword}
+                                        id='inputPassword'
+                                    />
+                                    {error && <p style={{ color: 'red' }} className='error'>{error}</p>}
+                                </div>
+                                <div className='Div-Bottom'>
+                                    <button id='Boton' onClick={handleSubmit} className='buttonSign'>Sign in</button>
+                                    <span> -Or Sign In with- </span>
+                                    <div>
+                                        <div className='cardsSocialMedias'>
+                                            <FaGoogle className='iconsSocialMedia' />
+                                            <span>Google</span>
+                                        </div>
+                                        <div className='cardsSocialMedias'>
+                                            <FaMicrosoft className='iconsSocialMedia' />
+                                            <span>Microsoft</span>
+                                        </div>
+                                        <div className='cardsSocialMedias'>
+                                            <FaFacebook className='iconsSocialMedia' />
+                                            <span>Facebook</span>
+                                        </div>
+                                    </div>
+                                    <span>Don't have an account?</span><Link to={'/register'}>Register Now?</Link>
+                                </div>
                             </div>
+                        </section>
+                        <div className='img-container'>
+                            <img src={Img2} alt="" className='img' />
                         </div>
-                    </section>
-                    <div className='img-container'>
-                        <img src={Img2} alt="" className='img' />
                     </div>
                 </div>
-            </div>
-        </>
+            </>
+        </motion.div>
     );
 }
 

@@ -13,7 +13,7 @@ import CosmeFulanito from './Componentes/CosmeFulanito/Cosme.jsx';
     const [pfp, setpfp] = useState(null)
     return (
       <Router>
-        <Routes>
+        <Routes basename="/SocialNetwork-Mini-Project">
           <Route path="/" element={<Login setUsername={setUsername} />} />
           <Route path="/home" element={<Home tweets={tweets} setTweets={setTweets} username={username} pfp={pfp} />} />
           <Route path="/mi-cuenta" element={<MiAccount setpfp={setpfp} />} />

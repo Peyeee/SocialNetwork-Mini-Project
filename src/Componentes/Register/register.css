@@ -21,3 +21,12 @@
 .IconPersonRegister>svg>path {
     color: yellowgreen !important;
 }
+.inputEmail{
+    appearance: none;
+    width: 80%;
+    border: none;
+    border-bottom: 0.2rem solid #ffffff;
+    background: none;
+    color: var(--frutillita);
+    padding: 0.4rem;
+}
